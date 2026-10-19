@@ -3,30 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мой сайт</title>
+  <title>О проекте — Мой сайт</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <nav class="navbar container justify-content-center" aria-label="Основная навигация">
-    <ul class="navbar-nav flex-row justify-content-center gap-4 gap-md-5 py-3">
+<header>
+  <nav class="navbar container" aria-label="Основная навигация">
+    <a class="site-name" href="index.html">Мой сайт</a>
+    <ul class="navbar-nav flex-row gap-3">
       <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
       <li class="nav-item"><a class="nav-link" href="about.html">О проекте</a></li>
       <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
     </ul>
   </nav>
-</header><main class="container page-card about-card my-4 my-md-5">
-  <h1>О проекте</h1>
-  <p>Я сделал этот сайт, чтобы применить на практике то, что изучаю на занятиях по веб-программированию.</p>
-  <p>В проекте я попробовал несколько базовых инструментов:</p>
-  <ul>
-    <li>HTML5 — чтобы задать структуру и содержание;</li>
-    <li>CSS — чтобы настроить цвета, размеры и расположение блоков;</li>
-    <li>Bootstrap — чтобы использовать готовую сетку и элементы интерфейса;</li>
-    <li>GitHub Pages — чтобы разместить готовые страницы в интернете.</li>
-  </ul>
-</main><footer class="site-footer"><div class="container text-center">Учебный сайт · 2026</div></footer>
+</header>
+<main class="container my-5">
+  <section class="card p-4 about-card">
+    <h1>О проекте</h1>
+    <p>Этот сайт я сделал, чтобы потренироваться создавать веб-страницы.</p>
+    <p>Для работы использованы:</p>
+    <ul>
+      <li>HTML для содержания страниц;</li>
+      <li>CSS для оформления;</li>
+      <li>Bootstrap для готовых элементов и сетки.</li>
+    </ul>
+  </section>
+</main>
+<footer class="container text-center py-4">Учебный сайт</footer>
 </body>
 </html>
-
