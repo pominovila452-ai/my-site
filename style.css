@@ -1,18 +1,26 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  color: #222;
-  background: #f7f7f7;
+  background: #f3f5f8;
+  color: #253247;
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 
-.site-header {
+header {
   background: #fff;
-  box-shadow: 0 2px 6px #ddd;
+  border-bottom: 1px solid #dce1e8;
+}
+
+.navbar {
+  min-height: 68px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-name {
+  color: #253247;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .navbar-nav {
@@ -20,73 +28,70 @@ body {
 }
 
 .nav-link {
-  color: #222;
-  font-weight: bold;
+  color: #253247;
 }
 
 .nav-link:hover {
-  color: #555;
+  color: #315fa8;
   text-decoration: underline;
 }
 
-.page-card {
-  max-width: 800px;
-  padding: 30px;
-  background: #fff;
+.card {
+  border: 1px solid #dce1e8;
   border-radius: 8px;
-  box-shadow: 0 3px 8px #ddd;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(37, 50, 71, 0.08);
 }
 
-.page-card h1 {
+.home-card {
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
   margin-bottom: 18px;
-  font-size: 32px;
+  color: #253247;
+  font-size: 30px;
 }
 
-.page-card ul {
-  padding-left: 22px;
+.about-card {
+  max-width: 650px;
 }
 
-.about-card,
 .contacts-card {
-  max-width: 620px;
-}
-
-.site-image {
-  width: 100%;
-  margin-top: 10px;
-}
-
-.eyebrow {
-  color: #3468f5;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.accent {
-  color: #3468f5;
+  max-width: 600px;
+  margin-left: auto;
 }
 
 .contacts-card li {
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 .contacts-card a {
-  color: #2454c6;
+  color: #315fa8;
 }
 
-.site-footer {
-  padding: 20px 0;
-  color: #666;
-  text-align: center;
+img {
+  border-radius: 8px;
+}
+
+footer {
+  color: #667085;
 }
 
 @media (max-width: 600px) {
-  .navbar-nav {
-    gap: 16px !important;
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 10px;
   }
 
-  .page-card {
-    margin: 20px 12px;
-    padding: 22px;
+  .navbar-nav {
+    gap: 12px !important;
+  }
+
+  .home-card {
+    min-height: 0;
   }
 }
