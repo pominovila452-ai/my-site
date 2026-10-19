@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #222;
+  background: #f7f7f7;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 6px #ddd;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-link {
+  color: #222;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+.page-card {
+  max-width: 800px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px #ddd;
+}
+
+.page-card h1 {
+  margin-bottom: 18px;
+  font-size: 32px;
+}
+
+.page-card ul {
+  padding-left: 22px;
+}
+
+.about-card,
+.contacts-card {
+  max-width: 620px;
+}
+
+.site-image {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.eyebrow {
+  color: #3468f5;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.accent {
+  color: #3468f5;
+}
+
+.contacts-card li {
+  margin-bottom: 6px;
+}
+
+.contacts-card a {
+  color: #2454c6;
+}
+
+.site-footer {
+  padding: 20px 0;
+  color: #666;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .navbar-nav {
+    gap: 16px !important;
+  }
+
+  .page-card {
+    margin: 20px 12px;
+    padding: 22px;
+  }
+}
