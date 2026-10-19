@@ -8,21 +8,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <nav class="navbar container justify-content-center" aria-label="Основная навигация">
-    <ul class="navbar-nav flex-row justify-content-center gap-4 gap-md-5 py-3">
+<header>
+  <nav class="navbar container" aria-label="Основная навигация">
+    <a class="site-name" href="index.html">Мой сайт</a>
+    <ul class="navbar-nav flex-row gap-3">
       <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
       <li class="nav-item"><a class="nav-link" href="about.html">О проекте</a></li>
       <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
     </ul>
   </nav>
-</header><main class="container page-card my-4 my-md-5">
-  <h1>Добро пожаловать!</h1>
-  <p>Это главная страница моего сайта, который я создал для учебного задания.</p>
-  <p class="text-center text-secondary">На других страницах можно узнать о проекте и посмотреть мои контакты.</p>
-  <img src="img/illustration.svg" class="img-fluid rounded site-image" alt="Иллюстрация ноутбука с фрагментом HTML-кода">
-</main><footer class="site-footer"><div class="container text-center">Учебный сайт · 2026</div></footer>
+</header>
+<main class="container my-5">
+  <div class="row align-items-center g-4">
+    <section class="col-md-7">
+      <div class="card p-4 home-card">
+        <h1>Добро пожаловать!</h1>
+        <p>Это мой сайт, созданный для учебного задания по веб-программированию.</p>
+        <p>На других страницах можно узнать о проекте и найти мои контакты.</p>
+      </div>
+    </section>
+    <div class="col-md-5">
+      <img src="img/illustration.svg" class="img-fluid rounded" alt="Ноутбук с примером HTML-кода">
+    </div>
+  </div>
+</main>
+<footer class="container text-center py-4">Учебный сайт</footer>
 </body>
 </html>
-
-
